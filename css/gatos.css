@@ -1,0 +1,68 @@
+/* Fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: papyrus;
+}
+
+body {
+    background-color: #6c1ed1;
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+header {
+    text-align: center;
+    color: #8b0000;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* Galeria de imagens de gatos */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsividade com media queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}

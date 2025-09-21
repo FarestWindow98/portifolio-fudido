@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supresa</title>
+    <link rel="stylesheet" href="../css/surpresa.css">
+</head>
+
+<main>
+<h1>Wake up</h1>
+</main>
+
+    <audio id="susto" src="../audio/sonic-exe-scream.mp3"></audio>
+</body>
+
+<!-- JavaScript: controla a reprodução do áudio -->
+<script>
+    // Espera a página carregar completamente
+    window.addEventListener('load', () => {
+        const audio = document.getElementById('susto');
+
+        // Tenta reproduzir o áudio automaticamente
+        audio.play().then(() => {
+            console.log("Áudio iniciado automaticamente.");
+        }).catch(error => {
+            console.warn("Navegador bloqueou o autoplay. Interação do usuário pode ser necessária.");
+        });
+
+        // Quando o áudio terminar, exibe mensagem no console
+        audio.addEventListener('ended', () => {
+            console.log("Áudio terminou.");
+            // Aqui você pode executar qualquer outra ação quando o som acabar
+        });
+    });
+</script>
+
+</html>

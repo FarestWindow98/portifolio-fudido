@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pussie Balls</title>
+    <link rel="stylesheet" href="../css/pussieballs.css">
+</head>
+
+<body class="tema_claro">
+    <header>
+        <h1>Noticias WEB</h1>
+        <button onclick="alternar_tema('tema_claro')">Alternar</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#artigos">Artigos</a></li>
+            <li><a href="#">Tecnologia</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="noticias">
+
+            <article class="noticia">
+                <img src="../img/p.jpg" alt="p">
+                <h2>Título</h2>
+                <p>Resumo do artigo</p>
+                <a href="#">link</a>
+
+            </article>
+            <article class="noticia">
+                <img src="../img/p.jpg" alt="p">
+                <h2>Título</h2>
+                <p>Resumo do artigo</p>
+                <a href="link">link</a>
+
+            </article>
+            <article class="noticia">
+                <img src="../img/p.jpg" alt="p">
+                <h2>Título</h2>
+                <p>Resumo do artigo</p>
+                <a href="#">link</a>
+
+            </article>
+            <article class="noticia">
+                <img src="../img/p.jpg" alt="p">
+                <h2>Título</h2>
+                <p>Resumo do artigo</p>
+                <a href="#">link</a>
+
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 &VerticalBar; Todos os Direitos Reservados</p>
+    </footer>
+
+    <script>
+        function alternar_tema() {
+            const corpo = document.body;
+            if (corpo.classList.contains('tema_claro')) {
+                corpo.classList.remove('tema_claro');
+                corpo.classList.add('tema_escuro');
+            } else {
+                corpo.classList.remove('tema_escuro');
+                corpo.classList.add('tema_claro');
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

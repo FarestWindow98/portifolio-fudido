@@ -1,0 +1,257 @@
+/* Reset simples */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: papyrus;
+}
+
+.alternarcor {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 10px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2d033b;
+    color: #f5f5f5;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+body button a {
+    text-decoration: none;     /* tira o underline do link */
+    color: rgb(128, 7, 248);              /* cor do texto */
+    display: block;            /* faz o link ocupar todo o botão */
+    justify-content: center;
+    width: 100%;               /* largura total do botão */
+    height: 100%;              /* altura total do botão */
+    line-height: 2.5em;        /* centraliza verticalmente o texto */
+    font-weight: bold;         /* deixa o texto em negrito */
+    }
+
+    body div {
+        display: flex;
+        justify-content: center; /* centraliza horizontalmente */
+        align-items: center;     /* centraliza verticalmente */
+    }
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    background-color: #3e1f47;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 25%;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+/* Nome (destaque) */
+.nome {
+    font-size: 24px;
+    font-weight: bold;
+    color: #c147e9;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Títulos */
+h2 {
+    color: #cd45fa;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Lista de gostos */
+ ul {
+    list-style-type: square;
+    padding-left: 20px;
+    background-color: #3e1f47;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    list-style: none;
+    text-decoration:underline;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+ul a {
+color: white;
+}
+
+/* Imagem na lista */
+section img {
+    display: block;
+    margin: 10px auto 0;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Parágrafo */
+p {
+    margin-top: 20px;
+    background-color: #3e1f47;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Imagem final */
+main img {
+    display: block;
+    margin: 20px auto 0;
+    width: 500px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #c147e9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #f5f5f5;
+    text-decoration: underline;
+}
+
+/* Responsividade para tablets (<= 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    header img {
+        width: 200px;
+    }
+
+    .nome {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    ul {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    section img {
+        width: 150px;
+    }
+
+    main img {
+        width: 90%;
+    }
+
+    p {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
+
+/* Responsividade para celulares pequenos (<= 480px) */
+@media (max-width: 480px) {
+    header img {
+        width: 150px;
+    }
+
+    .nome {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    ul {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    section img {
+        width: 120px;
+    }
+
+    main img {
+        width: 100%;
+    }
+
+    p {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    body button a {
+        font-size: 14px;
+        line-height: 2em;
+    }
+}
+
+
+
+/* Tema Escuro */
+
+body.tema_escuro {
+    background-color: #1a0b1f;
+    color: #e0d4f7;
+}
+
+body.tema_escuro button a {
+    color: #6a0dad;
+}
+
+/* Cabeçalho */
+body.tema_escuro header {
+    background-color: #2a003f;
+}
+
+/* Nome (destaque) */
+body.tema_escuro .nome {
+    color: #b08df0;
+}
+
+/* Títulos */
+body.tema_escuro h2 {
+    color: #d6a8ff;
+}
+
+/* Lista de gostos */
+body.tema_escuro ul {
+    background-color: #220033;
+}
+
+body.tema_escuro ul a {
+    color: #e0d4f7;
+}
+
+/* Parágrafo */
+body.tema_escuro p {
+    background-color: #3a1b4f;
+}
+
+/* Rodapé */
+body.tema_escuro footer a {
+    color: #957bbf;
+}
+
+body.tema_escuro footer a:hover {
+    color: #d6a8ff;
+}
